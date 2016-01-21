@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <parameter name="browser" value="IE"/>
+  <test name="Test(failed)" parallel="none">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="mainScript.ScriptPOM">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="homePage"/>
+        </methods>
+      </class> <!-- mainScript.ScriptPOM -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Test on Chrome(failed)" parallel="none">
+    <parameter name="browser" value="GC"/>
+    <classes>
+      <class name="mainScript.ScriptPOM">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="homePage"/>
+        </methods>
+      </class> <!-- mainScript.ScriptPOM -->
+    </classes>
+  </test> <!-- Test on Chrome(failed) -->
+  <test name="Test on Internet Explorer(failed)" parallel="none">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="mainScript.ScriptPOM">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="homePage"/>
+        </methods>
+      </class> <!-- mainScript.ScriptPOM -->
+    </classes>
+  </test> <!-- Test on Internet Explorer(failed) -->
+</suite> <!-- Failed suite [Suite] -->

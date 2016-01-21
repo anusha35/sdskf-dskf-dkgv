@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+      	<parameter name="browser" value="FF" />
+    <classes>
+      <class name="mainScript.ScriptPOM"/>
+    </classes>
+  </test>
+  <test name="Test on Chrome">
+		<parameter name="browser" value="GC" />
+		<classes>
+			<class name="mainScript.ScriptPOM" />
+		</classes>
+	</test>
+
+	<test name="Test on Internet Explorer">
+		<parameter name="browser" value="IE" />
+		<classes>
+			<class name="mainScript.ScriptPOM" />
+		</classes>
+	</test>
+   <!-- Test -->
+</suite> <!-- Suite -->
